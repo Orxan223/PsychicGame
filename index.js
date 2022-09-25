@@ -3,10 +3,10 @@ var x = document.querySelector("#guess");
 var sub = document.querySelector('#submit')
 
 sub.onclick = function () {
-    if (x === y) {
+    if (x.value == y) {
         alert("CONGRATULATIONS!!!");
     }
-    else if (x > y) {
+    else if (x.value > y) {
         guess++;
         alert("OOPS SORRY!! Try a smaller number");
     }
